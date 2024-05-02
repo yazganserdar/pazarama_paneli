@@ -1,5 +1,11 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      { "source": "^/add/$", "destination": "/product_management/views/add_product_view" },
+      { "source": "^/list/$", "destination": "/product_management/views/product_list_view" },
+      { "source": "^/", "destination": "/product_management/views/home_view" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/$1" }
     ]
   }
+  
