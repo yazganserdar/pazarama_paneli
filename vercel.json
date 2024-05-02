@@ -1,7 +1,9 @@
 {
     "routes": [
       { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/" }
+      { "src": "/", "dest": "/pazarama_paneli/urls.py" },
+      { "src": "/add", "dest": "/pazarama_paneli/urls.py" },
+      { "src": "/list", "dest": "/pazarama_paneli/urls.py" }
     ]
   }
   
