@@ -1,11 +1,9 @@
 {
-    "rewrites": [
-      { "source": "^/add/$", "destination": "/product_management/views/add_product_view" },
-      { "source": "^/list/$", "destination": "/product_management/views/product_list_view" },
-      { "source": "^/", "destination": "/product_management/views/home_view" }
-    ],
+    "version": 2,
     "routes": [
-      { "src": "/(.*)", "dest": "/$1" }
+      {
+        "src": "/(.*)",
+        "dest": "myweb/wsgi.py"
+      }
     ]
   }
-  
