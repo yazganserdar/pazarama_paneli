@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-uc@v@gxa-_s-gqk&_k-%ax8@n*l#f6eltyv+_w3$+&4=oj^a-s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pazarama-paneli.vercel.app']
+ALLOWED_HOSTS = ['pazarama-paneli.vercel.app','127.0.0.1']
 
 
 # Application definition
