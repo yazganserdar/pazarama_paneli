@@ -1,9 +1,15 @@
 {
-    "version": 2,
     "routes": [
+      { "handle": "filesystem" },
       {
-        "src": "/(.*)",
-        "dest": "myweb/wsgi.py"
+        "src": "/",
+        "dest": "/pazarama_paneli/urls.py"
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/pazarama_paneli/urls.py"
       }
     ]
   }
