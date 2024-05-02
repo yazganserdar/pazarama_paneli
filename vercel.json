@@ -1,9 +1,16 @@
 {
+    "version": 2,
     "routes": [
-      { "handle": "filesystem" },
-      { "src": "/", "dest": "/pazarama_paneli/urls.py" },
-      { "src": "/add", "dest": "/pazarama_paneli/urls.py" },
-      { "src": "/list", "dest": "/pazarama_paneli/urls.py" }
+      { "src": "/", "dest": "/pazarama_paneli/urls.py" }
+    ],
+    "env": {
+      "DJANGO_SETTINGS_MODULE": "pazarama_paneli.settings"
+    },
+    "builds": [
+      {
+        "src": "pazarama_paneli/urls.py",
+        "use": "@vercel/python"
+      }
     ]
   }
   
